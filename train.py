@@ -13,7 +13,7 @@ def main():
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print("using {} device.".format(device))
 
-    data_path = 'D:\\PycharmProjects\\pythonProject\\Deep-Learning-Image-Classification-Models-Based-CNN-or-Attention\\Datasets\\flower'
+    data_path = 'D:\\PycharmProjects\\pythonProject\\vit_flowers_classification\\Datasets\\flower'
     assert os.path.exists(data_path), "{} path does not exist.".format(data_path)
 
     data_transform = {
